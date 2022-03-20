@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-html,body {
+html,body, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #F9F9F9;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  transition: 1s;
+}
+
+html,body, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -62,11 +74,21 @@ html,body {
   margin-right: 10pt;
   font-style: normal;
   font-weight: normal;
+  font-size: 15px;
 }
 
 .header-block nav ul li a {
   color: #1F1534;
   text-decoration: none;
+}
+
+.header-block button{
+  margin:0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* Diversity */
@@ -333,8 +355,8 @@ html,body {
 
 .collaborators-button
 {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
   text-align: center;
@@ -451,4 +473,9 @@ html,body {
   display: block;
   width: min-content;
   margin-right: 5rem;
+}
+
+.dark-mode{
+  background-color: black;
+  color: white;
 }
